@@ -26,6 +26,7 @@ class Migration(migrations.Migration):
             name='Topic',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+
                 ('lastUpdated', models.DateTimeField(auto_now_add=True)),
                 ('board', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='topics', to='boards.board')),
                 ('starter', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='topics', to=settings.AUTH_USER_MODEL)),
