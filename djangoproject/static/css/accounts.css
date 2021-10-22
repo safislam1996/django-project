@@ -1,0 +1,14 @@
+body{
+  background-color:rgba(98, 154, 218, 0.9);
+}
+
+.logo {
+  font-family: 'Peralta',cursive;
+}
+.logo a{
+  color: rgba(0, 0, 0, 0.8);
+}
+.logo a :hover,
+.logo a ::after{
+  text-decoration: none;
+}
